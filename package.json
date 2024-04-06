@@ -1,0 +1,41 @@
+{
+  "name": "uk-kit-project",
+  "version": "1.0.4",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/react": "^18.2.74",
+    "antd": "^5.16.0",
+    "classnames": "^2.5.1",
+    "css-loader": "^7.0.0",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.74.1",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "peerDependencies": {
+    "antd": "^5.16.0",
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": ["dist"]
+}

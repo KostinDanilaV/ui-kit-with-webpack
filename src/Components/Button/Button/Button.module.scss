@@ -1,0 +1,121 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  gap: 8px;
+  transition: all 0.3s;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+}
+
+.background {
+  border: 2px solid var(--btn-border-color-1);
+  background-color: var(--btn-bg-color-1);
+  color: var(--btn-text-color-1);
+  transition: all 0.3s;
+
+  &:hover:enabled {
+    background-color: var(--btn-bg-color-hover);
+    color: var(--btn-text-color-1);
+  }
+}
+
+.outline {
+  border: 2px solid var(--btn-border-color-2);
+  background-color: var(--btn-bg-color-2);
+  color: var(--btn-text-color-2);
+  transition: all 0.3s;
+
+  &:hover:enabled {
+    background-color: var(--btn-bg-color-hover);
+    color: var(--btn-text-color-2);
+  }
+}
+
+.icon {
+  padding: 0 !important;
+
+  & > svg {
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  &:hover:enabled {
+    & > svg {
+      fill: var(--btn-bg-color-hover-icon);
+    }
+  }
+}
+
+.clear {
+  padding: 0 !important;
+  color: var(--btn-text-color-1);
+
+  &:hover:enabled {
+    color: var(--text-color-3);
+  }
+}
+
+// размеры
+.xs {
+  height: 30px;
+  padding: 4px 6px;
+  border-width: 1px;
+  border-radius: 6px;
+  font: var(--font-s);
+  gap: 4px;
+}
+
+.s {
+  height: 30px;
+  padding: 6px 10px;
+  border-width: 1px;
+  font: var(--font-s);
+  gap: 6px;
+}
+
+.m {
+  height: 40px;
+  padding: 11px;
+  font: var(--font-m);
+  gap: 8px;
+}
+
+.l {
+  padding: 11px;
+  font: var(--font-l);
+  gap: 8px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+// квадратная кнопка
+.square {
+  padding: 0;
+}
+
+.square.xs {
+  width: 30px;
+  height: 30px;
+}
+
+.square.s {
+  width: 40px;
+  height: 40px;
+}
+
+.square.m {
+  width: 50px;
+  height: 50px;
+}
+
+.square.l {
+  width: 50px;
+  height: 50px;
+}
